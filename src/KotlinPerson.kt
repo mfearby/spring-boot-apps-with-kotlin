@@ -7,8 +7,8 @@ data class KotlinPerson (
     val surname: String,
     val dateOfBirth: Calendar? = null)
 {
-
-    fun getAge() = getAge(this.dateOfBirth)
+    val age: Int
+        get() = getAge(this.dateOfBirth)
 
     override fun toString() = "$title $firstName $surname"
 

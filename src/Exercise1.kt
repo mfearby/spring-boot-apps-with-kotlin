@@ -6,10 +6,11 @@ import java.util.*
 fun main() {
     val dateOfBirth = GregorianCalendar(1974, 1, 1)
     val marc = KotlinPerson(1,"Mr", "Marc", "Fearby", dateOfBirth)
-    println("Marc's age = ${marc.getAge()}")
+    println("$marc's age is ${marc.age}")
 
     val john = KotlinPerson(1,"Mr", "John", "Smith")
-    println("John's age = ${john.getAge()}")
+    println("$john's age is ${john.age}")
 
-    println("The age of someone born on 3rd May 1988 is ${KotlinPerson.getAge(GregorianCalendar(1988, 3, 3))}")
+    println("The age of someone born on 3rd May 1988 is "
+            + KotlinPerson.getAge(GregorianCalendar(1988, 3, 3)))
 }
